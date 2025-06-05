@@ -9,7 +9,7 @@ import Skills from "./components/Skills";
 
 export default function Home() {
   return (
-    <div style={{backgroundColor:'#040d09',color:'white'}} className="min-h-screen max-w-4xl justify-self-center">
+    <div style={{backgroundColor:'#040d09',color:'white'}} className="">
       <div className="">
         <Header/>
         <About_me/>

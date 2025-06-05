@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 function Projects() {
@@ -8,7 +8,8 @@ function Projects() {
       name:'MarketPlace',
       description:`A user-powered marketplace for buying and selling items. Features: image uploads, search filters, user authentication.`,
       photo:'https://s',
-      toolsused:['React','tailwind','Nextjs','Mongodb','MaterialUI','Expressjs','Mongoose','framer-motion','bcrypt']
+      toolsused:['React','tailwind','Nextjs','Mongodb','MaterialUI','Expressjs','Mongoose','framer-motion','bcrypt'],
+      link:'https://ecom-mauve-eight.vercel.app/'
     },
     {
       name:'Agency Manager',
@@ -18,6 +19,7 @@ function Projects() {
           Minima itaque architecto dolorum earum.`,
       photo:'https://s',
       toolsused:['React','tailwind','Nextjs','Mongodb','MaterialUI','Expressjs','Mongoose','framer-motion','bcrypt']
+      ,link:'https://agency-kpdq.onrender.com/'
     },
   ]
 
@@ -33,14 +35,13 @@ function Projects() {
             <h1 className='text-2xl mb-2'>{v.name}</h1>
             <p>{v.description}</p>
             <div className="flex flex-row flex-wrap">
-            {v.toolsused.map((v)=><div key={v} className='border-2 p-1 m-1 ml-0 mb-0' style={{borderColor:'#1e402d'}}>{v}</div>)}
+            {v.toolsused.map((v)=><div key={v} className=' border-2 p-1 m-1 ml-0 mb-0' style={{borderColor:'#1e402d'}}>{v}</div>)}
+            </div>
 
+            <div className="block mt-1">
+              <Link href={v.link!}>{v.link}</Link>
             </div>
           </div>
-
-        <div className="bg-gray-500 min-h-52 rounded-2xl" style={{width:'100%'}}>
-            <Image src={'/ecom.png'} alt='fchdgskjlk' width={2000} height={2000} style={{borderRadius:'15px'}}/>
-        </div>
     </div>
       })}
       
