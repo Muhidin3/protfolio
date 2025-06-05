@@ -6,8 +6,6 @@ function Footer() {
         © 2025 Muhidin All Rights Reserved. <br/>  
     Built with ❤️ using React, Next.js, and Tailwind CSS. <br />
     
-    [LinkedIn] [GitHub] [Twitter] [Email]
-    
     </div>
   )
 }

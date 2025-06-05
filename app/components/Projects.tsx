@@ -8,7 +8,7 @@ function Projects() {
       name:'MarketPlace',
       description:`A user-powered marketplace for buying and selling items. Features: image uploads, search filters, user authentication.`,
       photo:'https://s',
-      toolsused:['React','tailwind','Nextjs','Mongodb','MaterialUI','Expressjs','Mongoose','framer-motion','bcrypt'],
+      toolsused:['Nextjs','tailwind','React','Mongodb','MaterialUI','Next-auth','Mongoose','framer-motion','bcrypt'],
       link:'https://ecom-mauve-eight.vercel.app/'
     },
     {
@@ -18,7 +18,7 @@ function Projects() {
            quasi voluptatum maiores error, vero nam nisi, libero dolorem. 
           Minima itaque architecto dolorum earum.`,
       photo:'https://s',
-      toolsused:['React','tailwind','Nextjs','Mongodb','MaterialUI','Expressjs','Mongoose','framer-motion','bcrypt']
+      toolsused:['React','tailwind','AWS','Mongodb','MaterialUI','Expressjs','Mongoose','framer-motion','multer','S3']
       ,link:'https://agency-kpdq.onrender.com/'
     },
   ]
@@ -27,7 +27,7 @@ function Projects() {
 
 
   return (
-    <div className='m-3 p-3' >
+    <div className='m-3 p-3 pt-15' id='projects'>
       <h1 className='text-3xl'>Projects</h1> 
       {projects.map((v,i)=>{
         return<div key={i} className='mt-4 rounded-2xl' style={{backgroundColor:'#11261a'}}>

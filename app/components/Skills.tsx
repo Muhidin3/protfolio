@@ -19,8 +19,8 @@ function Skills() {
   ]
 
   return (
-    <div className='m-3 p-3'>
-      <h1 className='text-2xl mb-3'>Skills</h1>
+    <div className='m-3 p-3 pt-15' id='skills'>
+      <h1 className='text-3xl mb-3'>Skills</h1>
       <div className="" >
         {skills.map((v,i)=><div key={i} className='my-5 p-3 rounded-2xl' style={{backgroundColor:'#11261a',color:'white'}}>
           <h1 className='text-xl ' >{v.skill}</h1>
