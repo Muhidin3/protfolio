@@ -1,24 +1,27 @@
-import About_me from "./components/About_me";
-import ContactMe from "./components/ContactMe";
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import Experience from "./components/Experience";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import { Header } from "@/components/header"
+import { Footer } from "@/components/footer"
+import { HeroSection } from "@/components/hero-section"
+import { AboutSection } from "@/components/about-section"
+import { SkillsSection } from "@/components/skills-section"
+import { ProjectsSection } from "@/components/projects-section"
+import { ContactSection } from "@/components/contact-section"
+import { AnimatedCharacter } from "@/components/animated-character"
+import { ThreeBackground } from "@/components/three-background"
 
 export default function Home() {
   return (
-    <div style={{backgroundColor:'#040d09',color:'white'}} className="w-full xl:w-1/2 lg:w-2/3 justify-self-center">
-      <div className="">
-        <Header/>
-        <About_me/>
-        <Projects/>
-        {/* <Experience/> */}
-        <Skills/>
-        <ContactMe/>
-      </div>
-        <Footer/>
-  </div>
-  );
+    <div className="min-h-screen">
+      <ThreeBackground />
+      <Header />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <SkillsSection />
+        <ProjectsSection />
+        <ContactSection />
+      </main>
+      <Footer />
+      <AnimatedCharacter />
+    </div>
+  )
 }

@@ -15,7 +15,7 @@ function Projects() {
       name:'Agency Manager',
       description:`Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Rem cum illum, repudiandae aspernatur voluptatibus eos sapiente
-           quasi voluptatum maiores error, vero nam nisi, libero dolorem. 
+          quasi voluptatum maiores error, vero nam nisi, libero dolorem. 
           Minima itaque architecto dolorum earum.`,
       photo:'https://s',
       toolsused:['React','tailwind','AWS','Mongodb','MaterialUI','Expressjs','Mongoose','framer-motion','multer','S3']
@@ -27,22 +27,26 @@ function Projects() {
 
 
   return (
-    <div className='m-3 p-3 pt-15' id='projects'>
+    <div className='m-3 p-3 pt-15 ' id='projects'>
       <h1 className='text-3xl'>Projects</h1> 
       {projects.map((v,i)=>{
-        return<div key={i} className='mt-4 rounded-2xl' style={{backgroundColor:'#11261a'}}>
+        return(
+        <div key={i} className='mt-4 rounded-2xl backdrop-blur-md bg-slate-500/40' 
+                    // style={{backgroundColor:'#11261a'}}
+                    >
           <div className="p-5 mb-2">
             <h1 className='text-2xl mb-2'>{v.name}</h1>
             <p>{v.description}</p>
             <div className="flex flex-row flex-wrap">
-            {v.toolsused.map((v)=><div key={v} className=' border-2 p-1 m-1 ml-0 mb-0' style={{borderColor:'#1e402d'}}>{v}</div>)}
+            {v.toolsused.map((v)=><div key={v} className=' m-1 ml-0 mb-0 rounded-3xl px-3 backdrop-blur-md bg-slate-100/40 text-black/60'>{v}</div>)}
             </div>
 
             <div className="block mt-1">
               <Link href={v.link!}>{v.link}</Link>
             </div>
           </div>
-    </div>
+        </div>
+    )
       })}
       
     </div>

@@ -22,10 +22,11 @@ function Skills() {
     <div className='m-3 p-3 pt-15' id='skills'>
       <h1 className='text-3xl mb-3'>Skills</h1>
       <div className="" >
-        {skills.map((v,i)=><div key={i} className='my-5 p-3 rounded-2xl' style={{backgroundColor:'#11261a',color:'white'}}>
-          <h1 className='text-xl ' >{v.skill}</h1>
-            <div className="flex flex-row flex-wrap">
-                {v.skills.map((val,it)=><p className='ml-2 border-2 p-1 mb-1' style={{borderColor:'#1e402d'}} key={it}>{val}</p>)}
+        {skills.map((v,i)=><div key={i} 
+                    className='my-5 p-3  rounded-2xl text-white backdrop-blur-md bg-slate-500/40'>
+          <h1 className='text-xl p-3' >{v.skill}</h1>
+            <div className="flex flex-row flex-wrap my-1">
+                {v.skills.map((val,it)=><p className='ml-2 px-3 rounded-2xl mb-1 backdrop-blur-md bg-slate-100/40 text-black/60'  key={it}>{val}</p>)}
             </div>
 
         </div>)}
