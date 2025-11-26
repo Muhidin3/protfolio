@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://protfolio-one-blush.vercel.app/sitemap.xml
